@@ -10,10 +10,9 @@
     <style>
       #header{
         background-color: red;
+        height: 200px;
       }
       #menu{
-        background-color: orange;
-        top: 200px;
       }
       #body{
         background-color: green;
@@ -30,14 +29,36 @@
       
     </div>
       <div id="menu">
-        <p>Menu</p>
+        <ul class="w3-navbar">
+          <li><a href="#" onclick="openPage('home')">Home</a></li>
+          <li><a href="#" onclick="openPage('about')">About</a></li>
+          <li><a href="#" onclick="openPage('news')">News</a></li>
+          <li><a href="#" onclick="openPage(contact')">Contact</a></li>
+                 </ul>
       </div>
+     
     <div id="body" class="w3-container">
+      <div id="home" class="page"></div>
+      <div id="about" class="page"></div>
+      <div id="news" class="page"></div>
+      <div id="contact" class="page"></div>
       <p>Text</p>
     </div>
     <div id="footer" class="w3-container">
       <p>Text</p>
     </div>
     </div>
+    <script>
+      openPage("home");
+
+function openPage(pageName) {
+     var i;
+    var x = document.getElementsByClassName("page");
+     for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none"; 
+    }
+     document.getElementById(pageName).style.display = "block"; 
+}
+    </script>
   </body>
   </html>
