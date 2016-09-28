@@ -1,6 +1,6 @@
-      openpage("home");
+     openPage("Home");
 
-function openpage(pageName) {
+function openPage(pageName) {
      var i;
     var x = document.getElementsByClassName("page");
      for (i = 0; i < x.length; i++) {
