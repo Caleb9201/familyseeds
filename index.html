@@ -23,6 +23,18 @@
     </style>
   </head>
   <body>
+        <script>
+      openPage("home");
+
+function openPage(pageName) {
+     var i;
+    var x = document.getElementsByClassName("page");
+     for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none"; 
+    }
+     document.getElementById(pageName).style.display = "block"; 
+}
+    </script>
     <div id="page" class="container-fluid">
     <div id="header" class="w3-container">
       <h1 id="title">Family Seeds</h1>
@@ -48,17 +60,5 @@
       <p>Text</p>
     </div>
     </div>
-    <script>
-      openPage("home");
-
-function openPage(pageName) {
-     var i;
-    var x = document.getElementsByClassName("page");
-     for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none"; 
-    }
-     document.getElementById(pageName).style.display = "block"; 
-}
-    </script>
   </body>
   </html>
