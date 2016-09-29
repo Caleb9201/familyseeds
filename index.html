@@ -8,26 +8,36 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-      #navbar {
+    ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #dddddd;
+    overflow: hidden;
+    background-color: #333;
 }
+
+li {
+    float: left;
 }
-     .active {
-    background-color: #4CAF50;
+
+li a {
+    display: block;
     color: white;
-} 
-      .link {
-    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
 }
     </stlyle>
   </head>
   <body class="container fluid">
     <div id="header"></div>
-<ul id="navbar">
-  <li class="active link"><a href="home.html">Home</a></li>
+<ul>
+  <li><a href="home.html">Home</a></li>
   <li><a href="about.html">About</a></li>
   <li><a href="news.html">News</a></li>
   <li><a href="contact.html">Contact</a></li>
