@@ -8,13 +8,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-
+#header{ 
+  background-color: #4ce600;
+  height: 200px;
+      }
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #aaff80;
 }
 ul.topnav li {float: left;}
 ul.topnav li a {
@@ -26,7 +29,7 @@ ul.topnav li a {
     transition: 0.3s;
     font-size: 17px;
 }
-ul.topnav li a:hover {background-color: #555;}
+ul.topnav li a:hover {background-color: #bbff99;}
 ul.topnav li.icon {display: none;}
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
@@ -53,7 +56,8 @@ ul.topnav li.icon {display: none;}
 }
     </style>
   </head>
-  <body>
+  <body class="container fluid">
+    <div id="header"></div>
 <ul class="topnav" id="myTopnav">
   <li><a href="#home">Home</a></li>
   <li><a href="#about">About</a></li>
